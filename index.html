@@ -1,12 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Juan Alcantara | Web</title>
+
+  <link rel="icon" type="image/png" href="resources/images/jlogo.png">
+  <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/style.css" />
+  <link rel="stylesheet" title="dark" href="resources/css/dark.css" />
+  <link rel="alternate stylesheet" title="light" href="resources/css/light.css" />
+  <link rel="stylesheet" href="resources/css/bootstrapcustom.css" />
+  <link rel="stylesheet" href="resources/css/canvas.css" />    
+  <script src="resources/js/alternate.js"></script>
 </head>
-<body>
-  <h1>This will be my site</h1>
+
+<body data-spy="scroll" data-target=".navbar-collapse" onload="set_style_from_cookie()">
+
+  <audio id="click1">
+  	<source src="resources/images/sound1.mp3">
+	</audio>
+  <audio id="click2">
+	  <source src="resources/images/sound2.mp3">
+  </audio>
+
+  <header>
+    <!-- start of navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+        <!-- start of navbar-header -->
+        <div class="navbar-header">
+
+          <div id="switch">
+            <a class="hidden-1" href="#" onclick="turnOnFlies();document.getElementById('click1').play();">
+        		  <img src="resources/images/off.png" alt="switch" onclick="switch_style('light');return false;"  id="light"/>
+            </a>
+            <a class="hidden-2" href="#" onclick="turnOffFlies();document.getElementById('click2').play();">
+        		  <img src="resources/images/on.png" alt="switch" onclick="switch_style('dark');return false;"  id="dark"/>
+            </a>
+          </div>
+
+          <a href="#" class="navbar-brand">
+            <h1>&lt; /<span class="j">J</span>-Alcantara &gt;</h1>
+          </a>
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  			    <span class="sr-only">Toggle navigation</span>
+  			    <span class="icon-bar"></span>
+  			    <span class="icon-bar"></span>
+  			    <span class="icon-bar"></span>
+  		    </button>
+
+        </div>
+        <!-- end of navbar-header -->
+
+        <!-- start of navbar-collapse -->
+        <div class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav" id="top-nav">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <!-- start of navbar-right -->
+          <div class="nav navbar-right">
+            <div id="headlinks">
+              <a class="hidden-1" href="https://www.linkedin.com/in/theonlyjuan" target="_blank">
+			          <img src="resources/icons/linkedin1.png" alt="Linkedin" onmouseover="this.src='resources/icons/linkedin3.png';" onmouseout="this.src='resources/icons/linkedin1.png';" />
+              </a>
+              <a class="hidden-1" href="https://github.com/JuanInAMillion" target="_blank">
+            	  <img src="resources/icons/github1.png"  alt="GitHub" onmouseover="this.src='resources/icons/github3.png';" onmouseout="this.src='resources/icons/github1.png';"/>
+              </a>
+              <a class="hidden-2" href="https://www.linkedin.com/in/theonlyjuan" target="_blank">
+            	  <img src="resources/icons/linkedin2.png" alt="Linkedin" onmouseover="this.src='resources/icons/linkedin3.png';" onmouseout="this.src='resources/icons/linkedin2.png';" />
+              </a>
+              <a class="hidden-2" href="https://github.com/JuanInAMillion" target="_blank">
+            	  <img src="resources/icons/github2.png"  alt="GitHub" onmouseover="this.src='resources/icons/github3.png';" onmouseout="this.src='resources/icons/github2.png';" />
+              </a>
+            </div>
+          </div>
+          <!-- end of navbar-right -->
+        </div>
+        <!-- end of navbar-collapse -->
+      </div>
+      <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+  </header>
+
+  <!-- main content -->
+  <main>
+    <canvas id="thisCanvas" data-paper-resize="true" data-paper-keepalive="true"></canvas>
+
+    <div id="bulb">
+      <img class="hidden-1" src="resources/images/bulboff.png" alt="bulboff" />
+      <img class="hidden-2" src="resources/images/bulbon.png"  alt="bulbon" />
+    </div>
+
+    <!-- about me -->
+    <section id="about">
+
+      <div id="profile">
+        <!-- start of profile div -->
+        <div class="container">
+          <div class="row">
+
+            <figure class="col-sm-6 col-md-4">
+              <img id="picture" src="resources/images/profilephoto2.png" alt="Juan Alcantara" />
+            </figure>
+
+            <div class="col-sm-6 col-md-8">
+              <p id="bio">My name is Juan Alcantara, I am a graduate of New York Institute of Technology with a Bachelors in Computer Science. I am very interested in seeking a position in Front-End Web Development where I can collaborate with my fellow colleagues,
+                and accomplish something that I can be proud of. I have a wide range of experience in web development that I have obtained through academic course work and personal projects. I am proficient in: Java, HTML5, CSS3, JavaScript, jQuery, Bootstrap,
+                PHP and MySQL.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end of profile div -->
+    </section>
+
+    <!-- project -->
+    <section id="projects">
+
+      <div id="project-pics">
+        <!-- start of project-pics div-->
+
+        <div class="container">
+          <div class="row">
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>ATM Simulation</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/atm/create.php" target="_blank"><img src="resources/images/atm.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">An online simulation of an ATM. This was built using HTML, CSS, JavaScript and PHP in conjunction with a MySQL DataBase for the back end.</p>
+              </div>
+            </figure>
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>Portfolio Website</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/jissela" target="_blank"><img src="resources/images/jissela2.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">An online portfolio using Twitter Bootstrap, JavaScript and jQuery. It is a responsive design that also uses video compression techniques to create video thumbnails.</p>
+              </div>
+            </figure>
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>Sorting Quiz</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/sortingquiz/" target="_blank"><img src="resources/images/quiz.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">A quiz that determines what Hogwarts House you belong too. It was created using HTML5, CSS3, JavaScript, jQuery and Photoshop.</p>
+              </div>
+            </figure>
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>Rock-Paper-Scissors</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/rps/" target="_blank"><img src="resources/images/rps.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">A Rock-Paper-Scissors game. Created using HTML5, CSS3, JavaScript and jQuery. Built with a Responsive Design for tablet and mobile play</p>
+              </div>
+            </figure>
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>Coming Soon Counter</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/countdown/" target="_blank"><img src="resources/images/countdown.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">A countdown to 2019, built using HTML5, CSS3, JavaScript and jQuery.</p>
+              </div>
+            </figure>
+
+            <figure class="col-sm-6 col-md-4">
+              <h3>Reaction Time Tester</h3>
+              <div class="thumbnail tint">
+                <a href="resources/projects/reaction/" target="_blank"><img src="resources/images/reaction.jpg" alt="..."></a>
+              </div>
+              <div class="caption">
+                <p class="text">A small game that test your reaction time. Built using HTML5, CSS3, and JavaScript. Still in development to make it mobile and give it more functionality.</p>
+              </div>
+            </figure>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- end of project-pics div-->
+
+    </section>
+    <!-- end of #project -->
+
+    <!-- contact-->
+    <section id="contact">
+
+      <div class="container">
+        <div class="row">
+
+          <figure id="resume">
+            <img src="resources/icons/pdf.png" alt="Resume" /><a href="resources/images/resume.pdf" download>Download Resume</a>
+          </figure>
+
+          <footer>
+            <p id="footer">Copyright © 2018 Juan Alcantara</p>
+          </footer>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- end of #contact -->
+  </main>
+    
+    
+  <!--Crawling Bug Start-->
+  <script type="text/paperscript" src="resources/js/bugs.js" canvas="thisCanvas"></script>
+  <script src="resources/js/custom.js"></script>
+  <script src="resources/js/jquery-2.0.2.min.js"></script>
+  <script src="resources/js/paper.js"></script>
+  <!--  Crawling Bugs End -->
+    
+  <!--jQuery (necessary for Bootstrap JavaScript plugins)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="resources/js/bootstrap.js"></script>
+
+  <script src="resources/js/scroll.js"></script>
+  <script src="resources/js/validation.js"></script>
 </body>
+
 </html>

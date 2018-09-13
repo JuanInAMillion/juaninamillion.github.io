@@ -1,0 +1,70 @@
+/** Bootstrap Edit**/
+
+.navbar {
+  border: 1px solid #000;
+  box-shadow: -4px 5px 5px, 4px 5px 5px #000;
+  min-height: 75px;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+}
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-text {
+  color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  color: #cc0000;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.disabled>a, .navbar-inverse .navbar-nav>.disabled>a:hover, .navbar-inverse .navbar-nav>.disabled>a:focus {
+  color: #444;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  color: #fff;
+  background-color: #080808;
+}

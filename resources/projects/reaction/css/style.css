@@ -1,0 +1,50 @@
+body{
+	background-image:url('../images/marioworld.jpg');
+	background-size:100%;
+	font-family:Helvetica, Arial, sans-serif;
+}
+	
+#container{
+	background-color:white;
+	margin:0 auto;
+	border:1px solid black;
+	border-radius: 8px;
+	width:1300px;
+	height:650px;
+}
+	
+#description{
+	margin-left:100px;
+}
+
+#pic{
+	display:none;
+	position:relative;	
+}
+	
+.bold{
+	font-weight:bold;
+}
+	
+#bestscore{
+        position:absolute;
+        margin-left:550px;
+        margin-top:-100px;
+}
+    	
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+#container{		
+	height:600px;	
+}
+	
+#bestscore{      	
+        margin-left:450px;
+}
+
+}

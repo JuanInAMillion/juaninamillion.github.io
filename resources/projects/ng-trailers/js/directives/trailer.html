@@ -1,0 +1,57 @@
+<div id="{{info.titleid}}"><!-- start of id div-->
+    <div class="jumbotron {{info.jumbotronclass}}">
+            <div class="container">
+            <h1>{{info.title}}</h1>
+             <em><p style="font-size:16px;">&ldquo;{{info.quote}}&rdquo;</p></em>
+            <a href="#">{{info.learn}}</a>      
+        </div>
+    </div>
+    <div class="neighborhood-guides"><!-- start of div-->
+        <div class="container"><!-- start of container div -->
+            <h2>{{info.videodescription}}</h2>
+            <p>{{info.videocommand}}</p>
+            <div class="row"><!-- start of row div -->
+                
+                <div class="col-md-4"><!-- start of first col -->
+                <div class="thumbnail" ng-if="info.col1vid1.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col1vid1.link}}"><video class="videothumb" ng-src="{{info.col1vid1.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col1vid2.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col1vid2.link}}"><video class="videothumb" ng-src="{{info.col1vid2.source}}" preload="auto" autoplay loop ></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col1vid3.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col1vid3.link}}"><video class="videothumb" ng-src="{{info.col1vid3.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col1vid4.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col1vid4.link}}"><video class="videothumb" ng-src="{{info.col1vid4.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                </div><!-- end of first col -->
+                
+                <div class="col-md-4"><!-- start of second col -->
+                <div class="thumbnail" ng-if="info.col2vid1.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col2vid1.link}}"><video class="videothumb" ng-src="{{info.col2vid1.source}}" preload="auto" autoplay loop ></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col2vid2.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col2vid2.link}}"><video class="videothumb" ng-src="{{info.col2vid2.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col2vid3.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col2vid3.link}}"><video class="videothumb" ng-src="{{info.col2vid3.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                </div><!-- end of second col -->
+                
+                <div class="col-md-4"><!-- start of third col -->
+                <div class="thumbnail" ng-if="info.col3vid1.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col3vid1.link}}"><video class="videothumb" ng-src="{{info.col3vid1.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col3vid2.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col3vid2.link}}"><video class="videothumb" ng-src="{{info.col3vid2.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                <div class="thumbnail" ng-if="info.col3vid3.source != ''">
+                <a class="fancybox-media" ng-href="{{info.col3vid3.link}}"><video class="videothumb" ng-src="{{info.col3vid3.source}}" preload="auto" autoplay loop ></video></a>
+                </div>
+                </div><!-- end of third col -->
+                
+            </div><!-- end of row div -->
+        </div><!-- end of container div -->        
+    </div><!-- end of div -->
+</div><!-- end of id div -->

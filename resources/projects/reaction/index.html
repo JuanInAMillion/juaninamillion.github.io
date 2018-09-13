@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+		<title>Reaction Tester</title>
+		
+		<link rel="icon" type="image/png" href="images/mushroom.png"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui.js"></script>
+
+
+		<!--
+		<script>
+    			$(document).ready(function(){
+    			$('#pic').click(function() {
+    			$(this).effect('explode');
+        			});
+    			});
+  		</script>
+		-->
+	</head>
+
+	<body>
+		<audio id="yoshiSound">
+  			<source src="sound/yoshi.mp3">		
+ 		</audio>
+		<audio id="marioSound">
+  			<source src="sound/mario.mp3">		
+ 		</audio>
+ 		<audio id="luigiSound">
+  			<source src="sound/luigi.mp3">		
+ 		</audio>
+ 		<audio id="koopaSound">
+  			<source src="sound/koopa.mp3">		
+ 		</audio>
+
+		<div id="description">
+			<h1>Test your reaction!</h1>
+			<p>Click on the images as quickly as you can!</p>
+	
+			<p class="bold">Your time: <span id="time">0 </span> seconds</p>
+		</div>
+  	
+  		<div id="bestscore">
+        		<h1 class="bold">Best Time: <span id="best">0 </span> seconds</h1>
+    		</div>
+
+		<div id="container">
+	
+		<!--<div id="box"></div>-->
+		
+		<img id="pic" src="images/bluekoopa.png" alt="blue koopa">	
+	
+		<script type="text/javascript">
+	
+			
+		var clickedTime; var createdTime; var reactionTime; var fastestTime=100; var newFastestTime;
+		
+		function makeBox(){
+		
+			createdTime=Date.now();
+		
+			var time = Math.random();
+		
+			time = time * 2000;
+		
+			setTimeout(function(){
+			
+				if (Math.random() > 0.75){
+			
+				document.getElementById("pic").src="images/yoshi.png";
+				document.getElementById('yoshiSound').play();
+				
+				
+				}else if(Math.random() > 0.50){
+				
+				document.getElementById("pic").src="images/mario.png";
+				document.getElementById('marioSound').play();
+				
+				}else if(Math.random() > 0.25){
+				
+				document.getElementById("pic").src="images/luigi.png";
+				document.getElementById('luigiSound').play();
+				
+				}else{
+				
+				document.getElementById("pic").src="images/bluekoopa.png";
+				document.getElementById('koopaSound').play();
+				
+				}
+				
+				var top = Math.random();
+				top = top*375;
+				
+				var left = Math.random();
+				left = left*1100;
+				
+				document.getElementById("pic").style.top=top+"px";
+				
+				document.getElementById("pic").style.left=left+"px";
+			
+			
+				document.getElementById("pic").style.display="block";
+			
+				createdTime=Date.now();
+		
+			},time);
+		
+		}
+	
+		document.getElementById("pic").onclick=function(){
+		
+			clickedTime=Date.now();
+			
+			reactionTime=(clickedTime-createdTime)/1000;
+			
+			document.getElementById("time").innerHTML=reactionTime;
+			
+			this.style.display="none";
+            
+			makeBox();	
+            
+            if(reactionTime < fastestTime){
+            	fastestTime = reactionTime            
+                document.getElementById("best").innerHTML=fastestTime;
+                return fastestTime;
+            }  
+            
+        }
+
+		makeBox();
+		    
+		
+	</script>
+	</div>
+	
+	</body>
+</html>

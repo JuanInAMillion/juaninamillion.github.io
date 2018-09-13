@@ -1,0 +1,198 @@
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;    
+  font-family: Helvetica;
+}
+
+canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #cc0000;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+  text-decoration: none;
+}
+
+a img {
+  border: 0;
+  outline: none;
+}
+
+/* main */
+
+section {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  #bulb {
+    display: none;
+  }
+}
+
+#bulb {
+  position: fixed;
+  top: 78px;
+  left: 10px;
+}
+
+#headlinks {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 1px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.j {
+  color: #cc0000;
+}
+
+#switch {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -65px;
+}
+
+/* about me */
+
+#about {
+  height: 850px;
+}
+
+#profile {
+  height: 100%;
+  width: 100%;
+  padding-top: 250px;
+}
+
+@media screen and (max-width: 576px) {
+  #profile {
+    padding-top: 100px;
+  }
+}
+
+#picture {
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#bio {
+  padding-top: 40px;
+  text-indent: 30px;
+  font-size: 20px;
+}
+
+/* projects */
+
+#projects {
+  min-height: 850px;
+}
+
+#project-pics {
+  padding-top: 100px;
+}
+
+.thumbnail {
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .6);
+  border-radius: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.text {
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  font-size: 17px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.tint:hover {
+  opacity: 0.5;
+  transition: all .3s linear;
+}
+
+/* contact */
+
+#contact {
+  height: 850px;
+}
+
+#resume {
+  text-align: center;
+  padding-top: 475px;
+}
+
+#resume a {
+  text-decoration: none;
+  font-size: 24px;
+  margin: 25px 0 0 20px;
+}
+
+/* contact button */
+
+h1 .btn {
+  font-size: 30px;
+  margin-top: 300px;
+}
+
+.contactmargin {
+  margin-top: 150px;
+}
+
+.btn-clear {
+  background-color: transparent;
+}
+
+.btn-clear:hover, .btn-clear:focus, .btn-clear.focus, .btn-clear:active, .btn-clear.active, .open>.dropdown-toggle.btn-clear {
+  /*color: rgba(0, 0, 0, 0);*/
+  font-family: Helvetica;
+  color: #cc0000;
+  background-color: transparent;
+  border: 2px solid -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+}
+
+.btn-clear:active, .btn-clear.active, .open>.dropdown-toggle.btn-clear {
+  background-image: none;
+}
+
+.btn-clear.disabled, .btn-clear[disabled], fieldset[disabled] .btn-clear, .btn-clear.disabled:hover, .btn-clear[disabled]:hover, fieldset[disabled] .btn-clear:hover, .btn-clear.disabled:focus, .btn-clear[disabled]:focus, fieldset[disabled] .btn-clear:focus, .btn-clear.disabled.focus, .btn-clear[disabled].focus, fieldset[disabled] .btn-clear.focus, .btn-clear.disabled:active, .btn-clear[disabled]:active, fieldset[disabled] .btn-clear:active, .btn-clear.disabled.active, .btn-clear[disabled].active, fieldset[disabled] .btn-clear.active {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.btn-clear .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+/* footer */
+
+#footer {
+  margin-top: 250px;
+  font-size: 22px;
+}
+
+footer {
+  text-align: center;
+}

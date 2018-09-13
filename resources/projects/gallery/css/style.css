@@ -1,0 +1,151 @@
+body {
+  background-image: url('../images/bg2.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: Nunito;
+}
+
+.navbar-inverse, navbar-brand, nav li a, h1, p, btn-linkedin, btn-github, btn-pinterest, btn-instagram {
+  /*text-shadow:0px 0px 10px #fff;*/
+  text-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: transparent;
+  border-top: 5px solid white;
+  box-shadow: 0 -5px 5px -5px rgba(255, 255, 255, 0.8);
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-text {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+  border-top: 5px solid transparent;
+}
+
+#home, #gallery, #about {
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+}
+
+.topHeader {
+  height: 100px;
+  margin-top: 50px;
+}
+
+.bottomHeader {
+  height: 80px;
+}
+
+.pageContent {
+  margin-top: 150px;
+  text-align: center;
+  height: 600px;
+}
+
+.navbar {
+  border: 1px solid transparent;
+}
+
+.navbar-brand {
+  font-size: 3.0em;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #999999;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+}
+
+.navbar-nav li a {
+  font-size: 16pt;
+}
+
+.btn-linkedin, .btn-github, .btn-pinterest, .btn-instagram {
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-linkedin:hover, .btn-github:hover, .btn-pinterest:hover, .btn-instagram:hover {
+  color: #999999;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+  background-color: transparent;
+  border: none;
+}
+
+.marginTop {
+  padding-top: 150px;
+}
+
+.description {
+  font-size: 16pt;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contactLink {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contactLink:hover {
+  color: #999999;
+  -webkit-transition: 1s;
+  /* Safari */
+  transition: 1s;
+}
+
+.topRow {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.topRow h1 {
+  font-size: 300%;
+}
+
+.thumbnail {
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-top: 50px;
+}
+
+.thumbnail a img {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+.profile {
+  border: 1px solid transpar;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+.contactbox {
+  margin-top: 200px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}

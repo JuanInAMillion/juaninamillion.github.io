@@ -1,0 +1,61 @@
+/* universal style */
+
+body {
+  background-image: url("../images/mainback.png");
+  background-color: black;
+}
+
+.hidden-2 {
+  display: none;
+}
+
+.navbar {
+  background-image: url("../images/mainhead.png");
+}
+
+a {
+  color: #666;
+}
+
+h1 {
+  color: #666;
+}
+
+/* navbar */
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #666;
+}
+
+/* about me */
+
+#bio {
+  color: white;
+}
+
+/* projects */
+
+.text {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+/* contact button */
+
+.btn-clear {
+  color: #666;
+  border: 2px solid #666;
+}
+
+.btn-clear:hover, .btn-clear:focus, .btn-clear.focus, .btn-clear:active, .btn-clear.active, .open>.dropdown-toggle.btn-clear {
+  border-color: #666;
+}
+
+/* copyright */
+
+#footer {
+  color: #666;
+}
