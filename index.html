@@ -8,15 +8,16 @@
   <title>Web | Juan</title>
   <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="resources/css/style.css" />
   <link rel="stylesheet" href="resources/css/responsive.css">
 </head>
 
 <body>
-  <!-- headder -->
+  <!-- header -->
   <header>
-    <nav>
-      <ul>
+    <nav class="site-container">
+      <ul class="nav-links">
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#skills">SKILLS</a></li>
@@ -32,14 +33,13 @@
     <div class="site-container">
 
       <div id="contact">
-        <h1>Juan Alcantara</h1>
+        <h1 class="name">Juan Alcantara</h1>
         <div class="social">
-          <a href="#">Linkedin</a>
-          <a href="">GitHub</a>
+          <a target="_blank" href="https://www.linkedin.com/in/theonlyjuan/" class="fa fa-linkedin-square social-icon"></a>
+          <a target="_blank" href="https://github.com/juaninamillion" class="fa fa-github social-icon"></a>
         </div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-          specimen
-          book. </p>
+        <p class="my-summary">I AM JUAN,<br>
+          A DESIGN ORIENTED FRONT-END DEVELOPER. I STRIVE TO BUILD IMMERSIVE AND BEAUTIFUL WEB APPLICATIONS THROUGH CAREFULLY CRAFTED CODE AND USER-CENTRIC DESIGN.</p>
         <button class="contact-btn" type="button" name="button">CONTACT ME</button>
       </div>
 
@@ -53,13 +53,11 @@
 
       <div id="profile">
         <div class="left-profile">
-          <h2>ABOUT ME</h2>
+          <h1>ABOUT ME</h1>
         </div>
         <div class="right-profile">
-          <p class="summary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-            Ipsum
-            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+          <p class="summary">My name is Gregory Assasie. I’m a self-taught web developer. I build beautiful, usable web Applications using best practices and the latest W3C web standards. I specialize in front-end development, user experience using
+            modern tools in the build process. My goal is to work fully as a web developer in a team of amazing people who share the same passion, and work daily to fulfil it . I am ready to start working with you. Say Hello </p>
         </div>
       </div>
 
@@ -72,7 +70,7 @@
     <div class="site-container">
 
       <h3>SKILLS</h3>
-      <div class="skill-section">
+      <div id="skill-section">
 
         <div class="skill-container">
           <img src="" alt="front-end">
@@ -88,8 +86,7 @@
         <div class="skill-container">
           <img src="" alt="responsive">
           <h4>Responsive Website</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book.</p>
+          <p>I Build Responsive Website Thus Making Web Pages Look Good On All Devices (Desktops, Tablets, And Phones). I Utilise CSS And The Power Of Media Queries To Resize, Hide, Shrink, Enlarge, Or Move Contents To Render Awesomeness.</p>
         </div>
 
         <div class="skill-container">
@@ -113,27 +110,71 @@
   <section id="portfolio">
     <div class="site-container">
 
-      <h3>CURRENT PROJECT</h3>
+      <div id="portfolio-container">
 
-      <div class="project">
-        <figure class="project-image">
-          <img src="" alt="project">
-        </figure>
-        <div class="project-summary">
-          <h2>App</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book.</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>MOBILE</li>
-          </ul>
-          <div class="code">
-            <button>DEMO</button>
-            <button>CODE</button>
+        <div class="project-container">
+          <figure class="project-image">
+            <img src="resources/images/mac.png" alt="project">
+          </figure>
+          <div class="project-summary">
+            <h2>App</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+            <ul class="skill-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>MOBILE</li>
+            </ul>
+            <div class="code">
+              <button>DEMO</button>
+              <button>CODE</button>
+            </div>
           </div>
         </div>
+
+        <div class="project-container">
+          <figure class="project-image">
+            <img src="resources/images/mac.png" alt="project">
+          </figure>
+          <div class="project-summary">
+            <h2>App</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+            <ul class="skill-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>MOBILE</li>
+            </ul>
+            <div class="code">
+              <button>DEMO</button>
+              <button>CODE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <figure class="project-image">
+            <img src="resources/images/mac.png" alt="project">
+          </figure>
+          <div class="project-summary">
+            <h2>App</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen book.</p>
+            <ul class="skill-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+              <li>MOBILE</li>
+            </ul>
+            <div class="code">
+              <button>DEMO</button>
+              <button>CODE</button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -141,8 +182,10 @@
   <!-- end of #portfolio -->
 
   <!-- footer -->
-  <footer class="footer">
-    TBT
+  <footer id="footer">
+    <div class="footer">
+      <p>© 2018 Juan Alcantara. All Rights Reserved.</p>
+    </div>
   </footer>
   <!-- end of footer -->
 
