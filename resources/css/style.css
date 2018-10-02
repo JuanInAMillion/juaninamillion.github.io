@@ -3,7 +3,7 @@ html, body {
   box-sizing: border-box;
   font-size: 16px;
   font-family: monospace, sans-serif;
-  color: #333
+  color: #666
 }
 
 a {
@@ -32,8 +32,6 @@ h4 {
 section {
   width: 100%;
   min-height: 100vh;
-  position: relative;
-  top: 5rem;
 }
 
 #home {
@@ -60,19 +58,28 @@ nav {
 .nav-links li {
   display: inline-block;
   margin: 0 .5rem;
+  margin-top: 1rem;
 }
 
 .nav-links a {
   color: rgb(0, 71, 171);
   font-size: 1.2rem;
-  padding: 2rem;
+  padding: 1.5rem;
   text-decoration: none;
 }
 
 .btn {
+  border: 1px solid rgb(0, 71, 171);
   border-radius: 1.5rem;
+  color: rgb(0, 71, 171);
   font-size: 1rem;
   padding: .5rem 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: rgb(0, 71, 171);
+  border: 1px solid rgb(0, 71, 171);
 }
 
 /* home */
@@ -92,8 +99,19 @@ nav {
 }
 
 .social-icon {
-  font-size: 2rem;
-  color: white
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: white;
+  text-decoration: none;
+}
+
+.my-summary {
+  margin-top: 1rem;
 }
 
 .contact-btn {
@@ -126,6 +144,7 @@ nav {
 
 .my-summary {
   text-align: center;
+  padding: 2rem 0;
 }
 
 /* skills */
@@ -138,11 +157,14 @@ nav {
 }
 
 .skill-container {
-  border: 1px solid black;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 30%;
+}
+
+.skill-icons {
+  width: 4rem;
 }
 
 /* portfolio */
