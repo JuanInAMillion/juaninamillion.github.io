@@ -12,7 +12,7 @@ a {
 
 h3, h4 {
   text-align: center;
-  color: rgb(0, 71, 171);
+  color: #0047ab;
 }
 
 h4 {
@@ -21,7 +21,7 @@ h4 {
 }
 
 h5 {
-  color: rgb(0, 71, 171);
+  color: #0047ab;
   font-size: 1.2rem;
 }
 
@@ -59,29 +59,30 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(0, 71, 171);
+  color: #0047ab;
   font-size: 1.2rem;
   padding: 1.5rem;
   text-decoration: none;
 }
 
 .btn {
-  border: 1px solid rgb(0, 71, 171);
+  border: 1px solid #0047ab;
   border-radius: 1.5rem;
-  color: rgb(0, 71, 171);
+  color: #0047ab;
   font-size: 1rem;
   padding: .5rem 2rem;
   transition: all 0.3s ease-in;
 }
 
 .btn:hover {
-  background-color: rgb(0, 71, 171);
-  border: 1px solid rgb(0, 71, 171);
+  background-color: #0047ab;
+  border: 1px solid #0047ab);
 }
 
 /* home */
 #home {
-  background-color: rgb(0, 71, 171);
+  background: linear-gradient(90deg, #000, #273A59);
+  opacity: 0.9;
 }
 
 #contact {
@@ -97,6 +98,7 @@ nav {
 
 .name {
   font-size: 2rem;
+  color: #0047ab;
 }
 
 .social-icon {
@@ -107,9 +109,9 @@ nav {
 }
 
 .social-icon:hover {
-  transform: scale(1.2);
   color: white;
   text-decoration: none;
+  transform: scale(1.2);
 }
 
 .my-summary {
@@ -120,25 +122,29 @@ nav {
   background-color: white;
 }
 
+.contact-btn:hover {
+  border: 1px solid #0047ab;
+}
+
 /* about me */
 #profile {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 75%;
   position: relative;
   top: 16rem;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .left-profile {
-  background-color: rgb(0, 71, 171);
+  background: #273A59;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
+  box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
   color: white;
   height: 26.25rem;
   width: 40%;
   text-align: center;
-  box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
 .left-profile h2 {
@@ -160,8 +166,8 @@ nav {
 }
 
 .my-summary {
-  text-align: center;
   padding: 2rem 0;
+  text-align: center;
 }
 
 /* skills */
@@ -195,6 +201,7 @@ nav {
 .project-container {
   border-bottom: 1px solid #666;
   margin-bottom: 8rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -223,7 +230,7 @@ nav {
 }
 
 .skill-used li {
-  background-color: rgb(0, 71, 171);
+  background-color: #0047ab;
   border-bottom: 1px solid black;
   border-radius: 5px;
   color: white;
@@ -234,7 +241,7 @@ nav {
 .project-btn {
   outline: 1px solid rgba(0, 71, 171);
   outline-offset: 0;
-  color: rgb(0, 71, 171);
+  color: #0047ab;
   padding: .5rem;
   margin: 0 .2rem;
   transition: all 1.25s cubic-bezier(.19, 1, .22, 1);
