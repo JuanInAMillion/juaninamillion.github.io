@@ -10,21 +10,6 @@ a {
   text-decoration: none;
 }
 
-h3, h4 {
-  text-align: center;
-  color: #0047ab;
-}
-
-h4 {
-  position: relative;
-  top: 10rem;
-}
-
-h5 {
-  color: #0047ab;
-  font-size: 1.2rem;
-}
-
 .site-container {
   margin: 0 auto;
   width: 80%;
@@ -37,7 +22,7 @@ section {
 
 /* header */
 header {
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 10px 6px -7px rgba(0, 0, 0, .59);
   position: fixed;
   height: 5rem;
@@ -59,34 +44,26 @@ nav {
 }
 
 .nav-links a {
-  color: #0047ab;
   font-size: 1.2rem;
   padding: 1.5rem;
   text-decoration: none;
 }
 
 .btn {
-  border: 1px solid #0047ab;
   border-radius: 1.5rem;
-  color: #0047ab;
   font-size: 1rem;
   padding: .5rem 2rem;
   transition: all 0.3s ease-in;
 }
 
-.btn:hover {
-  background-color: #0047ab;
-  border: 1px solid #0047ab);
-}
+.btn:hover {}
 
 /* home */
 #home {
-  background: linear-gradient(90deg, #000, #273A59);
-  opacity: 0.9;
+  /* the home page gradient color goes here */
 }
 
 #contact {
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,18 +75,17 @@ nav {
 
 .name {
   font-size: 2rem;
-  color: #0047ab;
 }
 
 .social-icon {
-  color: white;
+  /*color: white;*/
   font-size: 1.5rem;
   padding: 0 .3rem;
   transition: all 0.5s ease-in;
 }
 
 .social-icon:hover {
-  color: white;
+  /*color: white;*/
   text-decoration: none;
   transform: scale(1.2);
 }
@@ -119,12 +95,10 @@ nav {
 }
 
 .contact-btn {
-  background-color: white;
+  background: white;
 }
 
-.contact-btn:hover {
-  border: 1px solid #0047ab;
-}
+.contact-btn:hover {}
 
 /* about me */
 #profile {
@@ -137,11 +111,9 @@ nav {
 }
 
 .left-profile {
-  background: #273A59;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   box-shadow: 5px 0 4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-  color: white;
   height: 26.25rem;
   width: 40%;
   text-align: center;
@@ -171,6 +143,12 @@ nav {
 }
 
 /* skills */
+#skills h2 {
+  position: relative;
+  top: 10rem;
+  text-align: center;
+}
+
 #skill-section {
   display: flex;
   justify-content: space-between;
@@ -230,18 +208,15 @@ nav {
 }
 
 .skill-used li {
-  background-color: #0047ab;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
   border-radius: 5px;
-  color: white;
   margin: .2rem;
   padding: 0 .3rem;
 }
 
 .project-btn {
-  outline: 1px solid rgba(0, 71, 171);
+  outline: 1px solid #666;
   outline-offset: 0;
-  color: #0047ab;
   padding: .5rem;
   margin: 0 .2rem;
   transition: all 1.25s cubic-bezier(.19, 1, .22, 1);
