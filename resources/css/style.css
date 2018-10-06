@@ -144,6 +144,7 @@ nav {
 
 /* skills */
 #skills h2 {
+  font-size: 1.5rem;
   position: relative;
   top: 10rem;
   text-align: center;
