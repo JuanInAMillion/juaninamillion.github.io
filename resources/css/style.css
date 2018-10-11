@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .site-container {
   margin: 0 auto;
   width: 80%;
@@ -45,9 +49,9 @@ nav {
 
 .nav-links a {
   font-size: 1.2rem;
-  padding: 1.5rem;
-  text-decoration: none;
+  padding: 1.6rem;
 }
+
 
 .btn {
   border-radius: 1.5rem;

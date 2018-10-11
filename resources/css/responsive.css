@@ -1,0 +1,27 @@
+/* desktop display */
+
+@media only screen and (max-width: 2600px) {
+
+}
+
+/* laptop display */
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+
+}
+
+/* tablet display */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* mobile display */
+
+@media only screen and (max-width: 480px) {
+
+}
