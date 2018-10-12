@@ -1,27 +1,71 @@
 /* desktop display */
-
-@media only screen and (max-width: 2600px) {
-
-}
+@media only screen and (max-width: 2600px) {}
 
 /* laptop display */
+@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 1200px) {
-
-}
-
-@media only screen and (max-width: 960px) {
-
-}
+@media only screen and (max-width: 960px) {}
 
 /* tablet display */
-
-@media only screen and (max-width: 768px) {
-
-}
+@media only screen and (max-width: 768px) {}
 
 /* mobile display */
-
 @media only screen and (max-width: 480px) {
+  #home .site-container {
+    width: 100%;
+  }
 
+  .site-container {
+    width: 90%;
+  }
+
+  .lg-site {
+    display: none;
+  }
+
+  #contact {
+    padding: 10rem 0;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  #profile {
+    width: 100%;
+    padding: 10rem 0;
+  }
+
+  .left-profile {
+    width: 30%;
+  }
+
+  .left-profile h2 {
+    font-size: 1rem;
+  }
+
+  .right-profile {
+    width: 70%;
+  }
+
+  .summary {
+    font-size: .8rem;
+  }
+
+  #skills h2 {
+    padding-top: 5rem;
+  }
+
+  #skill-section {
+    justify-content: center;
+  }
+
+  .skill-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-summary {
+    padding: 0;
+  }
 }
