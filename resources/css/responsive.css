@@ -7,14 +7,26 @@
     display: none;
   }
 
+  #contact {
+    padding: 10rem 0;
+  }
+
+  #skills h2 {
+    padding-top: 2rem;
+  }
+
   #skill-section {
     justify-content: center;
+    padding-top: 2rem;
   }
 
   .skill-container {
     align-items: center;
     text-align: center;
     width: 32rem;
+  }
+  #portfolio-container {
+    padding-top: 5rem;
   }
 }
 
@@ -27,18 +39,31 @@
     width: 90%;
   }
 
+  #contact {
+    padding: 10rem 0;
+  }
+
   #profile {
     width: 100%;
   }
 
+  #skills h2 {
+    padding-top: 2rem;
+  }
+
   #skill-section {
     justify-content: center;
+    padding-top: 2rem;
   }
 
   .skill-container {
     align-items: center;
     text-align: center;
     width: 32rem;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
   }
 }
 
@@ -54,6 +79,7 @@
 
   #contact {
     width: 100%;
+    padding: 10rem 0;
   }
 
   .my-summary {
@@ -68,8 +94,13 @@
     font-size: .8rem;
   }
 
+  #skills h2 {
+    padding-top: 2rem;
+  }
+
   #skill-section {
     justify-content: center;
+    padding-top: 2rem;
   }
 
   .skill-container {
@@ -77,16 +108,20 @@
     text-align: center;
     width: 32rem;
   }
+
+  #portfolio-container {
+    padding-top: 5rem;
+  }
 }
 
 /* mobile display */
 @media only screen and (max-width: 480px) {
-  .site-container {
-    width: 90%;
-  }
-
   .lg-site {
     display: none;
+  }
+
+  .site-container {
+    width: 90%;
   }
 
   #contact {
@@ -123,16 +158,21 @@
   }
 
   #skills h2 {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   #skill-section {
     justify-content: center;
+    padding-top: 2rem;
   }
 
   .skill-container {
     align-items: center;
     text-align: center;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
   }
 
   .project-summary {
