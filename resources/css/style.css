@@ -68,6 +68,7 @@ nav {
 }
 
 #contact {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,7 @@ nav {
 
 /* about me */
 #profile {
+  border: 1px solid red;
   display: flex;
   align-items: center;
   padding-top: 16rem;
