@@ -1,75 +1,8 @@
 /* desktop display */
 @media only screen and (max-width: 2600px) {}
 
-/* laptop display */
-@media only screen and (max-width: 1200px) {
-  .lg-site {
-    display: none;
-  }
-
-  #contact {
-    padding: 10rem 0;
-  }
-
-  #skills h2 {
-    padding-top: 2rem;
-  }
-
-  #skill-section {
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  .skill-container {
-    align-items: center;
-    text-align: center;
-    width: 32rem;
-  }
-
-  #portfolio-container {
-    padding-top: 5rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .lg-site {
-    display: none;
-  }
-
-  .site-container {
-    width: 90%;
-  }
-
-  #contact {
-    padding: 10rem 0;
-  }
-
-  #profile {
-    width: 100%;
-  }
-
-  #skills h2 {
-    padding-top: 2rem;
-  }
-
-  #skill-section {
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  .skill-container {
-    align-items: center;
-    text-align: center;
-    width: 32rem;
-  }
-
-  #portfolio-container {
-    padding-top: 5rem;
-  }
-}
-
 /* tablet display */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .lg-site {
     display: none;
   }
