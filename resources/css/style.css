@@ -186,7 +186,6 @@ nav {
   padding-bottom: 2rem;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .project-image {
@@ -207,7 +206,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 2rem;
   text-align: justify;
   width: 35rem;
 }

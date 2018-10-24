@@ -25,6 +25,7 @@
     text-align: center;
     width: 32rem;
   }
+
   #portfolio-container {
     padding-top: 5rem;
   }
@@ -112,6 +113,10 @@
   #portfolio-container {
     padding-top: 5rem;
   }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
 }
 
 /* mobile display */
@@ -173,6 +178,10 @@
 
   #portfolio-container {
     padding-top: 5rem;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
   }
 
   .project-summary {
