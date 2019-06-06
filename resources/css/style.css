@@ -96,6 +96,8 @@ nav {
 
 .my-summary {
   margin-top: 1rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .contact-btn {
@@ -139,11 +141,6 @@ nav {
 .right-profile p {
   padding: 0 1rem;
   text-align: justify;
-}
-
-.my-summary {
-  padding: 2rem 0;
-  text-align: center;
 }
 
 /* skills */
