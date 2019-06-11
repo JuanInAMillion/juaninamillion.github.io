@@ -69,7 +69,6 @@ nav {
 }
 
 #contact {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +122,6 @@ nav {
 }
 
 .skill-container {
-  border: 1px solid red;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -150,7 +148,6 @@ nav {
 }
 
 .project-image {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +159,6 @@ nav {
 }
 
 .project-summary {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,8 +175,7 @@ nav {
 }
 
 .skill-used li {
-  border: 1px solid black;
-  border-radius: 5px;
+  border-bottom: 1px solid black;
   margin: .2rem;
   padding: 0 .3rem;
 }
