@@ -168,16 +168,26 @@ nav {
   width: 35rem;
 }
 
-.skill-used {
+.tech-used {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.skill-used li {
-  border-bottom: 1px solid black;
+.tech-used li {
+  position: relative;
   margin: .2rem;
   padding: 0 .3rem;
+}
+
+.tech-used li::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  bottom: 0;
+  left: 20%;
+  border-bottom: 1px solid grey;
 }
 
 .project-btn {
