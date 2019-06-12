@@ -126,6 +126,7 @@ nav {
 
 .skill-icons {
   width: 4rem;
+  transition: 2s;
 }
 
 /* portfolio */
