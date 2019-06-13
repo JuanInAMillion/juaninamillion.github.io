@@ -42,12 +42,16 @@ nav {
 
 .nav-links li {
   display: inline-block;
-  margin: 0 .5rem;
-  margin-top: 1rem;
+  margin: 1rem .5rem 0;
 }
 
 .nav-links a {
   padding: 1.2rem;
+}
+
+li.active a {
+  padding-bottom: 25px;
+  border-bottom: 5px solid #007bff;
 }
 
 .btn {

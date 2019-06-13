@@ -1,8 +1,3 @@
-// Smooth Scroll
-const scroll = new SmoothScroll('.nav-links a[href*="#"]', {
-  speed: 1200
-});
-
 //ScrollMagic
 var tl = new TimelineMax({onUpdate:updatePercentage});
 var tl2 = new TimelineMax();
