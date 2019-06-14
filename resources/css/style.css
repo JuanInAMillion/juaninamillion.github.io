@@ -12,7 +12,7 @@ a:hover, a:focus, a:active {
 }
 
 .site-container {
-  border: 1px solid black;
+  border: 1px solid #000;
   margin: 0 auto;
   width: 80%;
 }
@@ -46,22 +46,26 @@ nav {
 }
 
 .nav-links a {
+  color: #0073FE;
   padding: 1.2rem;
 }
 
 li.active a {
   padding-bottom: 25px;
-  border-bottom: 5px solid #007bff;
+  border-bottom: 5px solid #0073FE;
 }
 
 .btn {
+  background: white;
   border-radius: 1.5rem;
   font-size: 1rem;
   padding: .5rem 2rem;
   transition: all 0.3s ease-in;
 }
 
-.btn:hover {}
+.btn:hover {
+  background-color: #0073FE;
+}
 
 /* home */
 #home {
@@ -82,14 +86,14 @@ li.active a {
 }
 
 .social-icon {
-  /*color: white;*/
+  color: #0073FE;
   font-size: 1.5rem;
   padding: 0 .3rem;
   transition: all 0.5s ease-in;
 }
 
 .social-icon:hover {
-  /*color: white;*/
+  color: #0073FE;
   text-decoration: none;
   transform: scale(1.2);
 }
@@ -99,12 +103,6 @@ li.active a {
   padding: 2rem 0;
   text-align: center;
 }
-
-.contact-btn {
-  background: white;
-}
-
-.contact-btn:hover {}
 
 /* skills */
 #skills h2 {
@@ -188,11 +186,11 @@ li.active a {
   height: 1px;
   bottom: 0;
   left: 20%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #999;
 }
 
 .project-btn {
-  outline: 1px solid #666;
+  outline: 1px solid #0073FE;
   outline-offset: 0;
   padding: .5rem;
   margin: 0 .2rem;
@@ -205,5 +203,5 @@ li.active a {
 
 footer {
   margin-top: 10rem;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
 }
