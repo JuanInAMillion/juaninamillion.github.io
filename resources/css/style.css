@@ -1,9 +1,9 @@
 /* universal style */
 html, body {
   box-sizing: border-box;
+  color: #666;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  color: #666;
   height: 100vh;
 }
 
@@ -18,8 +18,8 @@ a:hover, a:focus, a:active {
 }
 
 section {
-  width: 100%;
   min-height: 100vh;
+  width: 100%;
 }
 
 /* header */
@@ -51,8 +51,8 @@ nav {
 }
 
 li.active a {
-  padding-bottom: 25px;
   border-bottom: 5px solid #0073FE;
+  padding-bottom: 25px;
 }
 
 .btn {
@@ -77,8 +77,8 @@ li.active a {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 60%;
   padding-top: 20rem;
+  width: 60%;
 }
 
 .name {
@@ -134,16 +134,16 @@ li.active a {
 /* portfolio */
 #portfolio-container {
   margin: 0 auto;
-  width: 100%;
   padding-top: 10rem;
+  width: 100%;
 }
 
 .project-container {
+  display: flex;
+  justify-content: space-around;
   border-bottom: 1px solid #666;
   margin-bottom: 8rem;
   padding-bottom: 2rem;
-  display: flex;
-  justify-content: space-around;
 }
 
 .project-image {
@@ -180,13 +180,13 @@ li.active a {
 }
 
 .tech-used li::before {
+  border-bottom: 1px solid #999;
   content: "";
   position: absolute;
-  width: 60%;
-  height: 1px;
   bottom: 0;
   left: 20%;
-  border-bottom: 1px solid #999;
+  height: 1px;
+  width: 60%;
 }
 
 .project-btn {
