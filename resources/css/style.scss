@@ -46,6 +46,19 @@ section {
   background-color: $theme-color;
   border-color: $theme-color;
 }
+
+.social-icon {
+  color: $theme-color;
+  font-size: 1.5rem;
+  padding: 0 0.3rem;
+  transition: all 0.5s ease-in;
+}
+
+.social-icon:hover {
+  color: $theme-color;
+  text-decoration: none;
+  transform: scale(1.2);
+}
 /* header */
 header {
   background: #fff;
@@ -103,20 +116,6 @@ header {
     text-align: center;
   }
 }
-
-.social-icon {
-  color: $theme-color;
-  font-size: 1.5rem;
-  padding: 0 0.3rem;
-  transition: all 0.5s ease-in;
-}
-
-.social-icon:hover {
-  color: $theme-color;
-  text-decoration: none;
-  transform: scale(1.2);
-}
-
 /* skills */
 #skills {
   h2 {
@@ -222,6 +221,9 @@ header {
 
 footer {
   border-top: 1px solid #000;
-  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
   text-align: center;
 }

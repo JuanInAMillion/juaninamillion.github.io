@@ -46,6 +46,19 @@ section {
   border-color: #0073FE;
 }
 
+.social-icon {
+  color: #0073FE;
+  font-size: 1.5rem;
+  padding: 0 0.3rem;
+  transition: all 0.5s ease-in;
+}
+
+.social-icon:hover {
+  color: #0073FE;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
 /* header */
 header {
   background: #fff;
@@ -95,19 +108,6 @@ header nav .nav-links li.active a {
   margin-top: 1rem;
   padding: 2rem 0;
   text-align: center;
-}
-
-.social-icon {
-  color: #0073FE;
-  font-size: 1.5rem;
-  padding: 0 0.3rem;
-  transition: all 0.5s ease-in;
-}
-
-.social-icon:hover {
-  color: #0073FE;
-  text-decoration: none;
-  transform: scale(1.2);
 }
 
 /* skills */
@@ -198,7 +198,10 @@ header nav .nav-links li.active a {
 
 footer {
   border-top: 1px solid #000;
-  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
   text-align: center;
 }
 
