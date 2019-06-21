@@ -97,25 +97,26 @@ header {
     font-size: 2rem;
   }
 
-  .social-icon {
-    color: $theme-color;
-    font-size: 1.5rem;
-    padding: 0 0.3rem;
-    transition: all 0.5s ease-in;
-  }
-
-  .social-icon:hover {
-    color: $theme-color;
-    text-decoration: none;
-    transform: scale(1.2);
-  }
-
   .summary {
     margin-top: 1rem;
     padding: 2rem 0;
     text-align: center;
   }
 }
+
+.social-icon {
+  color: $theme-color;
+  font-size: 1.5rem;
+  padding: 0 0.3rem;
+  transition: all 0.5s ease-in;
+}
+
+.social-icon:hover {
+  color: $theme-color;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
 /* skills */
 #skills {
   h2 {

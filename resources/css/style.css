@@ -91,21 +91,23 @@ header nav .nav-links li.active a {
 #contact .name {
   font-size: 2rem;
 }
-#contact .social-icon {
+#contact .summary {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-icon {
   color: #0073FE;
   font-size: 1.5rem;
   padding: 0 0.3rem;
   transition: all 0.5s ease-in;
 }
-#contact .social-icon:hover {
+
+.social-icon:hover {
   color: #0073FE;
   text-decoration: none;
   transform: scale(1.2);
-}
-#contact .summary {
-  margin-top: 1rem;
-  padding: 2rem 0;
-  text-align: center;
 }
 
 /* skills */
