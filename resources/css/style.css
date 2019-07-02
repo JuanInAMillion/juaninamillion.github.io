@@ -115,20 +115,22 @@ header nav .nav-links li.active a {
   padding-top: 10rem;
   text-align: center;
 }
-#skills #skill-section {
+
+#skill-section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
   padding-top: 10rem;
 }
-#skills #skill-section .skill-container {
+
+.skill-container {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 22rem;
 }
-#skills #skill-section .skill-container .skill-icons {
+.skill-container .skill-icons {
   width: 4rem;
   transition: 2s;
 }
