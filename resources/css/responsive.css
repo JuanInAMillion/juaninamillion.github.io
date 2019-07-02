@@ -7,24 +7,12 @@
   #contact {
     padding-top: 15rem;
   }
-
-  #skill-section {
-    padding-top: 5rem;
-  }
-
-  .skill-container {
-    width: 20rem;
-  }
 }
 
 /* desktop display */
 @media only screen and (min-width:1600px) and (max-width: 2400px) {
   html, body {
     font-size: 24px;
-  }
-
-  .skill-container {
-    width: 17rem;
   }
 }
 
@@ -49,21 +37,6 @@
 
   .summary {
     padding: 0 5rem;
-  }
-
-  #skills h2 {
-    padding-top: 2rem;
-  }
-
-  #skill-section {
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  .skill-container {
-    align-items: center;
-    text-align: center;
-    width: 32rem;
   }
 
   #portfolio-container {
@@ -95,20 +68,6 @@
 
   .name {
     font-size: 1.8rem;
-  }
-
-  #skills h2 {
-    padding-top: 2rem;
-  }
-
-  #skill-section {
-    justify-content: center;
-    padding-top: 2rem;
-  }
-
-  .skill-container {
-    align-items: center;
-    text-align: center;
   }
 
   #portfolio-container {

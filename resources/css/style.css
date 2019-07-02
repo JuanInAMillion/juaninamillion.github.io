@@ -109,32 +109,6 @@ header nav .nav-links li.active a {
   text-align: center;
 }
 
-/* skills */
-#skills h2 {
-  font-size: 1.5rem;
-  padding-top: 10rem;
-  text-align: center;
-}
-
-#skill-section {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding-top: 10rem;
-}
-
-.skill-container {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 22rem;
-}
-.skill-container .skill-icons {
-  width: 4rem;
-  transition: 2s;
-}
-
 /* portfolio */
 #portfolio #portfolio-container {
   margin: 0 auto;
