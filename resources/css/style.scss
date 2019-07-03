@@ -1,5 +1,74 @@
 /* variables */
 $theme-color: #0073FE;
+/* animation style */
+/* ==============ANIMATION=============== */
+@keyframes appear {
+  from {
+    opacity: 0;
+    filter: blur(2rem);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(.7,.7);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1,1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1,.9) translateY(0);
+  }
+
+  30% {
+    transform: scale(.9,1.1) translateY(-5px);
+  }
+
+  50% {
+    transform: scale(1.05,.95) translateY(0);
+  }
+
+  57% {
+    transform: scale(1,1) translateY(-2px);
+  }
+
+  64% {
+    transform: scale(1,1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1,1) translateY(0);
+  }
+}
+
+.appear {
+  animation: appear 2s ease-in-out;
+}
+
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+
+.hidden {
+  opacity: 0;
+}
 /* universal style */
 body,
 html {
@@ -8,6 +77,7 @@ html {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -114,6 +184,18 @@ header {
     padding: 2rem 0;
     text-align: center;
   }
+
+  #scroll-button {
+    animation: bounce 2s infinite;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    cursor: pointer;
+    color: $theme-color;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+  }
 }
 /* portfolio */
 #portfolio {
@@ -125,9 +207,13 @@ header {
     .project-container {
       display: flex;
       justify-content: space-around;
-      border-bottom: 1px solid #666;
-      margin-bottom: 8rem;
-      padding-bottom: 2rem;
+      position: relative;
+      width: 90%;
+      margin: 10px auto 40px;
+      border: 1px solid #ddd;
+      border-radius: 1px;
+      box-shadow: -2px 2px 1px 0 rgba(0,0,0,0.25);
+      padding: 20px;
 
       .project-image {
         display: flex;

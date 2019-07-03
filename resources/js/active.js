@@ -2,14 +2,6 @@ $(document).ready(function() {
 
   var scrollLink = $('.scroll');
 
-  // Smooth scrolling
-  scrollLink.click(function(e) {
-    e.preventDefault();
-    $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 500 );
-  });
-
   // Active link switching
   $(window).scroll(function() {
     var scrollbarLocation = $(this).scrollTop();
