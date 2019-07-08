@@ -1,7 +1,7 @@
 let contact = document.getElementById("contact");
 let scrollButton = document.getElementById("scroll-button");
 let portfolio = document.getElementById("portfolio");
-//MAKES THE BLURB FADE IN AND FOCUS ON WINDOW LOAD
+//MAKES #CONTACT FADE IN AND FOCUS ON WINDOW LOAD
 window.onload = () => {
   contact.classList.add("appear");
   contact.style.opacity = "1";
