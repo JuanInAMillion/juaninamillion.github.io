@@ -1,6 +1,7 @@
 /* very large desktop display */
-@media only screen and (min-width:3001px) and (max-width: 5500px) {
-  html, body {
+@media only screen and (min-width: 3001px) and (max-width: 5500px) {
+  body,
+html {
     font-size: 64px;
   }
 
@@ -8,10 +9,10 @@
     padding-top: 10rem;
   }
 }
-
 /* large desktop display */
-@media only screen and (min-width:2401px) and (max-width: 3000px) {
-  html, body {
+@media only screen and (min-width: 2401px) and (max-width: 3000px) {
+  body,
+html {
     font-size: 32px;
   }
 
@@ -19,14 +20,13 @@
     padding-top: 15rem;
   }
 }
-
 /* desktop display */
-@media only screen and (min-width:1600px) and (max-width: 2400px) {
-  html, body {
+@media only screen and (min-width: 1600px) and (max-width: 2400px) {
+  body,
+html {
     font-size: 24px;
   }
 }
-
 /* tablet display */
 @media only screen and (max-width: 960px) {
   .lg-site {
@@ -58,7 +58,6 @@
     flex-wrap: wrap;
   }
 }
-
 /* mobile display */
 @media only screen and (max-width: 480px) {
   .lg-site {
@@ -93,3 +92,5 @@
     padding: 0;
   }
 }
+
+/*# sourceMappingURL=_media.css.map */

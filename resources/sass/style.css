@@ -1,4 +1,4 @@
-/* variables */
+@import url(https://fonts.googleapis.com/css?family=Lato);
 /* animation style */
 /* ==============ANIMATION=============== */
 @keyframes appear {
@@ -60,6 +60,7 @@
   opacity: 0;
 }
 
+/* variables */
 /* universal style */
 body,
 html {
@@ -72,15 +73,13 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
   color: #0073FE;
   text-decoration: none;
-}
-
-a:active,
-a:focus,
-a:hover {
-  color: #0073FE;
 }
 
 .site-container {
@@ -101,8 +100,6 @@ section {
 }
 
 .social-icon:hover {
-  color: #0073FE;
-  text-decoration: none;
   transform: scale(1.2);
 }
 
@@ -115,25 +112,28 @@ header {
   width: 100%;
   z-index: 1;
 }
-header nav {
+
+nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
   padding: 0 2rem;
 }
-header nav .nav-links li {
+
+.nav-links li {
   display: inline-block;
   margin: 0 0.5rem;
 }
-header nav .nav-links a {
+.nav-links a {
   color: #0073FE;
   padding: 1.7rem 1rem;
 }
-header nav .nav-links li.active a {
+.nav-links li.active a {
   border-bottom: 0.3rem solid #0073FE;
 }
-header nav .btn {
+
+.btn {
   background: #fff;
   color: #0073FE;
   border-color: #0073FE;
@@ -144,9 +144,9 @@ header nav .btn {
   transition: all 0.3s ease-in;
   outline: none;
 }
-header nav .btn:hover {
+
+.btn:hover {
   background-color: #0073FE;
-  border-color: #0073FE;
   color: #fff;
 }
 
@@ -163,15 +163,18 @@ header nav .btn:hover {
   padding-top: 20rem;
   width: 60%;
 }
-#contact .name {
+
+.name {
   font-size: 2rem;
 }
-#contact .summary {
+
+.summary {
   margin-top: 1rem;
   padding: 2rem 0;
   text-align: center;
 }
-#contact #scroll-button {
+
+#scroll-button {
   animation: bounce 2s infinite;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
@@ -182,37 +185,40 @@ header nav .btn:hover {
   width: 1.5rem;
   text-align: center;
 }
-#contact #scroll-button .arrow {
+#scroll-button a {
   font-size: 1.5rem;
 }
 
 /* portfolio */
-#portfolio #portfolio-container {
+#portfolio-container {
   margin: 0 auto;
   padding-top: 10rem;
   width: 100%;
 }
-#portfolio #portfolio-container .project-container {
+
+.project-container {
   display: flex;
   justify-content: space-around;
   position: relative;
-  width: 90%;
   margin: 0.625rem auto 2.5rem;
   border: 0.0625rem solid #ddd;
   border-radius: 0.0625rem;
   box-shadow: -0.125rem 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.25);
   padding: 1.25rem;
+  width: 90%;
 }
-#portfolio #portfolio-container .project-container .project-image {
+
+.project-image {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 35rem;
 }
-#portfolio #portfolio-container .project-container .project-image img {
+.project-image img {
   width: 100%;
 }
-#portfolio #portfolio-container .project-container .project-summary {
+
+.project-summary {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,22 +227,23 @@ header nav .btn:hover {
   text-align: justify;
   width: 35rem;
 }
-#portfolio #portfolio-container .project-container .project-summary h3 {
+.project-summary h3 {
   color: #0073FE;
   font-size: 1.6rem;
 }
-#portfolio #portfolio-container .project-container .project-summary .tech-used {
+
+.skill {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 0.5rem 0;
 }
-#portfolio #portfolio-container .project-container .project-summary .tech-used li {
+.skill li {
   position: relative;
   margin: 0.2rem;
   padding: 0 0.3rem;
 }
-#portfolio #portfolio-container .project-container .project-summary .tech-used li::before {
+.skill li::before {
   border-bottom: 0.0625rem solid #999;
   content: "";
   position: absolute;
@@ -245,16 +252,19 @@ header nav .btn:hover {
   height: 0.0625rem;
   width: 60%;
 }
-#portfolio #portfolio-container .project-container .project-summary .code {
+
+.code {
   padding: 0.5rem 0;
 }
-#portfolio #portfolio-container .project-container .project-summary .code .project-btn {
+
+.code-btn {
   border: 0.0625rem solid #0073FE;
   padding: 0.5rem;
   margin: 0 0.4rem;
   transition: 0.5s;
 }
-#portfolio #portfolio-container .project-container .project-summary .code .project-btn:hover {
+
+.code-btn:hover {
   border: 0.25rem solid transparent;
   margin: 0 0.2rem;
 }
@@ -266,6 +276,101 @@ footer {
   align-items: center;
   height: 10rem;
   text-align: center;
+}
+
+/* very large desktop display */
+@media only screen and (min-width: 3001px) and (max-width: 5500px) {
+  body,
+html {
+    font-size: 64px;
+  }
+
+  #contact {
+    padding-top: 10rem;
+  }
+}
+/* large desktop display */
+@media only screen and (min-width: 2401px) and (max-width: 3000px) {
+  body,
+html {
+    font-size: 32px;
+  }
+
+  #contact {
+    padding-top: 15rem;
+  }
+}
+/* desktop display */
+@media only screen and (min-width: 1600px) and (max-width: 2400px) {
+  body,
+html {
+    font-size: 24px;
+  }
+}
+/* tablet display */
+@media only screen and (max-width: 960px) {
+  .lg-site {
+    display: none;
+  }
+
+  .site-container {
+    width: 90%;
+  }
+
+  section {
+    min-height: 100%;
+  }
+
+  #contact {
+    padding: 10rem 0;
+    width: 100%;
+  }
+
+  .summary {
+    padding: 0 5rem;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+}
+/* mobile display */
+@media only screen and (max-width: 480px) {
+  .lg-site {
+    display: none;
+  }
+
+  .site-container {
+    width: 90%;
+  }
+
+  section {
+    min-height: 100%;
+  }
+
+  #contact {
+    padding: 10rem 0;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+
+  .project-summary {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

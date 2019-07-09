@@ -1,0 +1,94 @@
+/* very large desktop display */
+@media only screen and (min-width:3001px) and (max-width: 5500px) {
+  body,
+  html {
+    font-size: 64px;
+  }
+
+  #contact {
+    padding-top: 10rem;
+  }
+}
+/* large desktop display */
+@media only screen and (min-width:2401px) and (max-width: 3000px) {
+  body,
+  html {
+    font-size: 32px;
+  }
+
+  #contact {
+    padding-top: 15rem;
+  }
+}
+/* desktop display */
+@media only screen and (min-width:1600px) and (max-width: 2400px) {
+  body,
+  html {
+    font-size: 24px;
+  }
+}
+/* tablet display */
+@media only screen and (max-width: 960px) {
+  .lg-site {
+    display: none;
+  }
+
+  .site-container {
+    width: 90%;
+  }
+
+  section {
+    min-height: 100%;
+  }
+
+  #contact {
+    padding: 10rem 0;
+    width: 100%;
+  }
+
+  .summary {
+    padding: 0 5rem;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+}
+/* mobile display */
+@media only screen and (max-width: 480px) {
+  .lg-site {
+    display: none;
+  }
+
+  .site-container {
+    width: 90%;
+  }
+
+  section {
+    min-height: 100%;
+  }
+
+  #contact {
+    padding: 10rem 0;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  #portfolio-container {
+    padding-top: 5rem;
+  }
+
+  .project-container {
+    flex-wrap: wrap;
+  }
+
+  .project-summary {
+    padding: 0;
+  }
+}
