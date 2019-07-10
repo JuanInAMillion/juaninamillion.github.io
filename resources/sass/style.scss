@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import "helpers/animation";
 /* variables */
-$theme-color: #0073FE;
+$theme-color: #87ceeb;
 /* universal style */
 body,
 html {
@@ -34,7 +34,6 @@ section {
 }
 
 .social-icon {
-  color: $theme-color;
   font-size: 1.5rem;
   padding: 0.3rem;
   transition: all 0.5s ease-in;
@@ -45,8 +44,6 @@ section {
 }
 /* header */
 header {
-  background: #fff;
-  box-shadow: 0 0.625rem 0.375rem -0.4375rem rgba(0, 0, 0, .59);
   position: fixed;
   height: 5rem;
   width: 100%;
@@ -78,7 +75,7 @@ nav {
 }
 
 .btn {
-  background: #fff;
+  background: transparent;
   color: $theme-color;
   border-color: $theme-color;
   border-radius: 1.5rem;
@@ -91,11 +88,13 @@ nav {
 
 .btn:hover {
   background-color: $theme-color;
-  color: #fff;
+  color: #0082c8;
 }
 /* home */
 #home {
-  /* the home page gradient color goes here */
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+  background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
 }
 
 #contact {
@@ -105,6 +104,7 @@ nav {
   margin: 0 auto;
   padding-top: 20rem;
   width: 60%;
+  color: #fff;
 }
 
 .name {
@@ -121,9 +121,9 @@ nav {
   animation: bounce 2s infinite;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  color: $theme-color;
+  color: #0082c8;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: transparent;
   height: 1.5rem;
   width: 1.5rem;
   text-align: center;
@@ -132,6 +132,67 @@ nav {
     font-size: 1.5rem;
   }
 }
+
+.wave {
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: url(../images/wave.png);
+  animation: animate 10s linear infinite;
+}
+
+.wave::before {
+  content: '';
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/wave.png);
+  animation: animate-reverse 10s linear infinite;
+  opacity: 0.4;
+}
+
+.wave::after {
+  content: '';
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/wave.png);
+  animation-delay: -5s;
+  animation: animate 20s linear infinite;
+  opacity: 0.4;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+      background-position: 0;
+    }
+    100%
+    {
+      background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse
+{
+    0%
+    {
+      background-position: 1360px;
+    }
+    100%
+    {
+      background-position: 0;
+    }
+}
+
 /* portfolio */
 #portfolio-container {
   margin: 0 auto;
@@ -217,6 +278,9 @@ nav {
 }
 
 footer {
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+  background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
   border-top: 0.0625rem solid #000;
   display: flex;
   justify-content: center;
