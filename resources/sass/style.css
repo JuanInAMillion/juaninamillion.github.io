@@ -60,6 +60,57 @@
   opacity: 0;
 }
 
+.wave {
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: url("../images/wave.png");
+  animation: animate 10s linear infinite;
+}
+
+.wave::before {
+  content: "";
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/wave.png");
+  animation: animate-reverse 10s linear infinite;
+  opacity: 0.4;
+}
+
+.wave::after {
+  content: "";
+  position: absolute;
+  height: 143px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url("../images/wave.png");
+  animation-delay: -5s;
+  animation: animate 20s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1360px;
+  }
+}
+@keyframes animate-reverse {
+  0% {
+    background-position: 1360px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
 /* variables */
 /* universal style */
 body,
@@ -102,51 +153,6 @@ section {
   transform: scale(1.2);
 }
 
-/* header */
-header {
-  position: fixed;
-  height: 5rem;
-  width: 100%;
-  z-index: 1;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-  padding: 0 2rem;
-}
-
-.nav-links li {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-.nav-links a {
-  color: #87ceeb;
-  padding: 1.7rem 1rem;
-}
-.nav-links li.active a {
-  border-bottom: 0.3rem solid #87ceeb;
-}
-
-.btn {
-  background: transparent;
-  color: #87ceeb;
-  border-color: #87ceeb;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  transition: all 0.3s ease-in;
-  outline: none;
-}
-
-.btn:hover {
-  background-color: #87ceeb;
-  color: #0082c8;
-}
-
 /* home */
 #home {
   background: #667db6;
@@ -179,9 +185,9 @@ nav {
   animation: bounce 2s infinite;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  color: #0082c8;
+  color: #87ceeb;
   margin: 0 auto;
-  background-color: transparent;
+  background-color: #fff;
   height: 1.5rem;
   width: 1.5rem;
   text-align: center;
@@ -190,57 +196,6 @@ nav {
   font-size: 1.5rem;
 }
 
-.wave {
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: url(../images/wave.png);
-  animation: animate 10s linear infinite;
-}
-
-.wave::before {
-  content: "";
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: url(../images/wave.png);
-  animation: animate-reverse 10s linear infinite;
-  opacity: 0.4;
-}
-
-.wave::after {
-  content: "";
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: url(../images/wave.png);
-  animation-delay: -5s;
-  animation: animate 20s linear infinite;
-  opacity: 0.4;
-}
-
-@keyframes animate {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 1360px;
-  }
-}
-@keyframes animate-reverse {
-  0% {
-    background-position: 1360px;
-  }
-  100% {
-    background-position: 0;
-  }
-}
 /* portfolio */
 #portfolio-container {
   margin: 0 auto;
@@ -326,12 +281,12 @@ footer {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
   background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
-  border-top: 0.0625rem solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10rem;
   text-align: center;
+  color: #fff;
 }
 
 /* very large desktop display */
@@ -365,10 +320,6 @@ html {
 }
 /* tablet display */
 @media only screen and (max-width: 960px) {
-  .lg-site {
-    display: none;
-  }
-
   .site-container {
     width: 90%;
   }
@@ -396,10 +347,6 @@ html {
 }
 /* mobile display */
 @media only screen and (max-width: 480px) {
-  .lg-site {
-    display: none;
-  }
-
   .site-container {
     width: 90%;
   }

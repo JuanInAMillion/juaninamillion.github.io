@@ -29,10 +29,6 @@
 }
 /* tablet display */
 @media only screen and (max-width: 960px) {
-  .lg-site {
-    display: none;
-  }
-
   .site-container {
     width: 90%;
   }
@@ -60,10 +56,6 @@
 }
 /* mobile display */
 @media only screen and (max-width: 480px) {
-  .lg-site {
-    display: none;
-  }
-
   .site-container {
     width: 90%;
   }
