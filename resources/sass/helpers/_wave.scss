@@ -8,29 +8,14 @@
   animation: animate 10s linear infinite;
 }
 
-.wave::before {
-  content: '';
-  position: absolute;
+.lower-wave {
+  background-image: url("../images/wave-reverse.png");
+  background-position: left;
   height: 143px;
   width: 100%;
   top: 0;
   left: 0;
-  background: url("../images/wave.png");
-  animation: animate-reverse 10s linear infinite;
-  opacity: 0.4;
-}
-
-.wave::after {
-  content: '';
-  position: absolute;
-  height: 143px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: url("../images/wave.png");
-  animation-delay: -5s;
-  animation: animate 20s linear infinite;
-  opacity: 0.4;
+  animation: animate 10s linear infinite;
 }
 @keyframes animate {
   0% {

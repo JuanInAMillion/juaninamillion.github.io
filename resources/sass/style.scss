@@ -16,10 +16,7 @@ html {
 }
 
 a:link,
-a:visited,
-a:hover,
-a:active,
-a:focus {
+a:visited {
   color: $theme-color;
   text-decoration: none;
 }
@@ -45,7 +42,8 @@ section {
 }
 /* home */
 #home {
-  background: #667db6; /* fallback for old browsers */
+  background: #667db6;
+  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
   background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
 }
@@ -85,7 +83,6 @@ section {
     font-size: 1.5rem;
   }
 }
-
 /* portfolio */
 #portfolio-container {
   margin: 0 auto;
@@ -175,8 +172,12 @@ footer {
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
   background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+}
+
+.footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 10rem;
   text-align: center;
