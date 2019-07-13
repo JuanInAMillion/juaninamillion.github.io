@@ -17,6 +17,7 @@
   left: 0;
   animation: animate 10s linear infinite;
 }
+
 @keyframes animate {
   0% {
     background-position: 0;
@@ -26,6 +27,7 @@
     background-position: 1360px;
   }
 }
+
 @keyframes animate-reverse {
   0% {
     background-position: 1360px;

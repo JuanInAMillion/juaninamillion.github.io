@@ -1,0 +1,11 @@
+/* color variables */
+$link-color: #87ceeb;
+$text-color: #ffffff;
+
+/* gradient site theme */
+@mixin theme-color {
+    background: #667db6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+}
