@@ -1,32 +1,38 @@
 /* very large desktop display */
 @media only screen and (min-width:3001px) and (max-width: 5500px) {
+
   body,
   html {
     font-size: 64px;
   }
 
-  #contact {
+  #profile {
     padding-top: 10rem;
   }
 }
+
 /* large desktop display */
 @media only screen and (min-width:2401px) and (max-width: 3000px) {
+
   body,
   html {
     font-size: 32px;
   }
 
-  #contact {
-    padding-top: 15rem;
+  #profile {
+    padding-top: 8rem;
   }
 }
+
 /* desktop display */
 @media only screen and (min-width:1600px) and (max-width: 2400px) {
+
   body,
   html {
     font-size: 24px;
   }
 }
+
 /* tablet display */
 @media only screen and (max-width: 960px) {
   .site-container {
@@ -37,7 +43,7 @@
     min-height: 100%;
   }
 
-  #contact {
+  #profile {
     padding: 10rem 0;
     width: 100%;
   }
@@ -54,33 +60,21 @@
     flex-wrap: wrap;
   }
 }
-/* mobile display */
+
+/* large mobile display */
 @media only screen and (max-width: 480px) {
-  .site-container {
-    width: 90%;
-  }
-
-  section {
-    min-height: 100%;
-  }
-
-  #contact {
-    padding: 10rem 0;
-  }
-
-  .name {
-    font-size: 1.8rem;
-  }
-
-  #portfolio-container {
-    padding-top: 5rem;
-  }
-
-  .project-container {
-    flex-wrap: wrap;
-  }
 
   .project-summary {
     padding: 0;
   }
+}
+
+/* small mobile display */
+@media only screen and (max-width: 400px) {
+
+  body,
+  html {
+    font-size: 12px;
+  }
+
 }

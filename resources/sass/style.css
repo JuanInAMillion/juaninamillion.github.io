@@ -191,11 +191,11 @@
 
 /* variables */
 /* universal style */
-body,
-html {
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #666;
+  color: #666666;
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   height: 100vh;
@@ -239,7 +239,7 @@ section {
   background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
 }
 
-#contact {
+#profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,9 +251,9 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding-top: 20rem;
+  padding-top: 15rem;
   width: 60%;
-  color: #fff;
+  color: #ffffff;
 }
 
 .name {
@@ -261,7 +261,7 @@ section {
 }
 
 .summary {
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 2rem 0;
   text-align: center;
 }
@@ -344,7 +344,6 @@ section {
 }
 
 .project-summary h3 {
-  color: #87ceeb;
   font-size: 1.6rem;
 }
 
@@ -416,7 +415,7 @@ footer {
           align-items: center;
   height: 10rem;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* very large desktop display */
@@ -425,7 +424,7 @@ footer {
   html {
     font-size: 64px;
   }
-  #contact {
+  #profile {
     padding-top: 10rem;
   }
 }
@@ -436,8 +435,8 @@ footer {
   html {
     font-size: 32px;
   }
-  #contact {
-    padding-top: 15rem;
+  #profile {
+    padding-top: 8rem;
   }
 }
 
@@ -457,7 +456,7 @@ footer {
   section {
     min-height: 100%;
   }
-  #contact {
+  #profile {
     padding: 10rem 0;
     width: 100%;
   }
@@ -473,29 +472,18 @@ footer {
   }
 }
 
-/* mobile display */
+/* large mobile display */
 @media only screen and (max-width: 480px) {
-  .site-container {
-    width: 90%;
-  }
-  section {
-    min-height: 100%;
-  }
-  #contact {
-    padding: 10rem 0;
-  }
-  .name {
-    font-size: 1.8rem;
-  }
-  #portfolio-container {
-    padding-top: 5rem;
-  }
-  .project-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .project-summary {
     padding: 0;
+  }
+}
+
+/* small mobile display */
+@media only screen and (max-width: 400px) {
+  body,
+  html {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
