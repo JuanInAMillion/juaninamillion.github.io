@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import "helpers/animation";
 @import "helpers/wave";
-/* variables */
-$theme-link: #87ceeb;
-$theme-text: #ffffff;
+@import "helpers/colors";
 
 /* universal style */
 html,
@@ -19,7 +17,7 @@ body {
 
 a:link,
 a:visited {
-  color: $theme-link;
+  color: $link-color;
   text-decoration: none;
 }
 
@@ -45,10 +43,7 @@ section {
 
 /* home */
 #home {
-  background: #667db6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
-  background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+  @include theme-color;
 }
 
 #profile {
@@ -58,7 +53,7 @@ section {
   margin: 0 auto;
   padding-top: 15rem;
   width: 60%;
-  color: $theme-text;
+  color: $text-color;
 }
 
 .name {
@@ -75,7 +70,7 @@ section {
   animation: bounce 2s infinite;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  color: $theme-link;
+  color: $link-color;
   margin: 0 auto;
   background-color: #fff;
   height: 1.5rem;
@@ -159,7 +154,7 @@ section {
 }
 
 .code-btn {
-  border: 0.0625rem solid $theme-link;
+  border: 0.0625rem solid $link-color;
   padding: 0.5rem;
   margin: 0 0.4rem;
   transition: 0.5s;
@@ -171,10 +166,7 @@ section {
 }
 
 footer {
-  background: #667db6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
-  background: linear-gradient(to bottom, #667db6, #0082c8, #0082c8, #667db6);
+  @include theme-color;
 }
 
 .footer {
@@ -184,7 +176,7 @@ footer {
   align-items: center;
   height: 10rem;
   text-align: center;
-  color: $theme-text;
+  color: $text-color;
 }
 
 @import "helpers/media";
