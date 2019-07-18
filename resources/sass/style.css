@@ -190,7 +190,6 @@
 }
 
 /* color variables */
-/* gradient site theme */
 /* universal style */
 html,
 body {
@@ -234,7 +233,7 @@ section {
 
 /* home */
 #home {
-  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 }
 
 #profile {
@@ -270,7 +269,7 @@ section {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   cursor: pointer;
-  color: #87ceeb;
+  color: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
   margin: 0 auto;
   background-color: #fff;
   height: 1.5rem;
@@ -378,7 +377,7 @@ section {
 }
 
 .code-btn {
-  border: 0.0625rem solid #87ceeb;
+  outline: 0.0625rem solid #87ceeb;
   padding: 0.5rem;
   margin: 0 0.4rem;
   -webkit-transition: 0.5s;
@@ -386,12 +385,11 @@ section {
 }
 
 .code-btn:hover {
-  border: 0.25rem solid transparent;
-  margin: 0 0.2rem;
+  outline: 0.25rem solid transparent;
 }
 
 footer {
-  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+  background: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
 }
 
 .footer {
