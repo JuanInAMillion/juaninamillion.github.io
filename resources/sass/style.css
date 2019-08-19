@@ -149,8 +149,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  -webkit-animation: animate-reverse 10s linear infinite;
+          animation: animate-reverse 10s linear infinite;
 }
 
 @-webkit-keyframes animate {
